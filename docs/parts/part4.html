@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <title>Exercise 4: Use Size Classes to Update UI for different screen sizes</title>
+    <link rel="stylesheet" type="text/css" href="./res/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./res/styles/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="./res/styles/styles.css">
+</head>
+
+<body>
+    <!-- Use the same title as the StartHere -->
+    <header>Auto Layout and Constraints</header>
+
+    <section id="main">
+        <h1 id="page-title"></h1>
+        <h2>Duration</h2>
+        <p>10 minutes</p>
+
+        <h2>Lab Goals</h2>
+        <p>
+            In this exercise, we'll update constraints based on the size-class of the device at runtime to better present our UI on different screen sizes.
+        </p>
+
+         <p>
+            You can continue from the prior exercise, or use the completed project in the <strong>Exercise 3</strong> folder.
+        </p>
+
+        <h1>Steps</h1>
+
+        <h2>Enable Size Classes</h2>
+      
+        <ol>
+            <li>
+                Open the Xamarin.iOS Designer by opening <b>Main.storyboard</b>.
+            </li>
+
+            <li>Click on an empty area of the design surface to ensure no views are selected.</li>
+            <li>In the <b>Properties</b> pane, ensure <b>Use Size Classes</b> is checked. (Press the <b>Enable Size Classes</b> button on the displayed popup, if enabling for the first time.)</li>
+          
+            <img src="./res/images/ex4_enable_size_classes.png" width="400" style='border:1px solid #999999'/></td>
+
+        </ol>
+
+        <h2>Increase the Image Size constraints for large screens</h2>
+        <p>We'll increase the displayed size of the monkey image to better use the avaliable screen space on larger screens like iPads.</p>
+
+        <ol>
+            <li>Change the storyboard visualization to any of the iPads. Remember that iPads have regular widths and heights for both portrait and landscape orientations.</li>
+            <li>Press the <b>Edit Traits</b> button and check both <b>Edits apply to Regular Width only</b> and <b>Edits apply to Regular Height only</b>.</li>
+            <li>Select the image and find the <b>Width</b> and <b>Height</b> constraints in the <b>Properties</b> Pane's <b>Layout</b> tab.</li>
+            <li>Change the <b>Constant</b> for both constraints to <b>350</b>.</li>
+            <li>Optionally press the <b>Done Varying</b> button to return to editing the default Any Any mode.</li>
+            <li>Change the visualization device between iPads and iPhones. The image size on the design surface should change.</li>
+            <li>Run the application on any iPad simulator and verify the image is larger at runtime.</li>
+        </ol>
+
+        <h1>Summary</h1>
+        <p>
+            In this exercise, we changed constraints based on the size class to customize our UI for different screen sizes.
+        </p>
+        <div class="align-right"> <a href="../Start%20Here.html">Go Back</a> </div>
+    </section>
+
+    <script src="./res/js/jquery.min.js"></script>
+    <script src="./res/js/prettify.js"></script>
+    <script src="./res/js/script.js"></script>
+
+    <footer>Copyright (C) 2018 Xamarin Inc., Microsoft.</footer>
+</body>
+</html>
